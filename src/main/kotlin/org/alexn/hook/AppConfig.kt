@@ -27,7 +27,7 @@ data class AppConfig(
 
     @Serializable
     data class Project(
-        val ref: String,
+        val ref: String? = null,
         val directory: String,
         val command: String,
         val secret: String,
